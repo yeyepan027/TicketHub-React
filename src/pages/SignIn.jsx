@@ -1,17 +1,17 @@
 
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // ✅ Import useNavigate
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 export default function SignIn({ onLogin }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const navigate = useNavigate(); // ✅ Initialize navigate
+  const navigate = useNavigate(); // Initialize navigate
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (email && password) {
-      onLogin(); // ✅ Update login state
-      navigate('/'); // ✅ Redirect to homepage
+      onLogin(); // Update login state
+      navigate('/'); // Redirect to homepage
     }
   };
 

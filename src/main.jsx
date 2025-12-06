@@ -11,7 +11,6 @@ import SignUp from './pages/SignUp';
 import CategoryPage from './pages/CategoryPage';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import SocialPage from './pages/SocialPage';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
@@ -41,9 +40,6 @@ function App() {
           <Route path="/category/:name" element={<CategoryPage />} />        
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/facebook" element={<SocialPage name="Facebook" url="https://www.facebook.com/profile.php?id=61584297314869" />} />
-          <Route path="/twitter" element={<SocialPage name="Twitter" />} />
-          <Route path="/instagram" element={<SocialPage name="Instagram" />} />
 
 
         </Routes>
